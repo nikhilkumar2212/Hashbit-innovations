@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#4CAF50" stroke="#000" stroke-width="2" />
+  <path d="M50 20 L70 50 L50 80 L30 50 Z" fill="#fff" />
+  <text x="50" y="55" font-family="Arial, sans-serif" font-size="10" fill="#000" text-anchor="middle" font-weight="bold">
+    FitHome
+  </text>
+  <text x="50" y="65" font-family="Arial, sans-serif" font-size="8" fill="#000" text-anchor="middle">
+    Pro
+  </text>
+</svg>
