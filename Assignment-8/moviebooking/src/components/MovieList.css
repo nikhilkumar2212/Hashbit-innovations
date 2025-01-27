@@ -1,0 +1,137 @@
+/* General Layout */
+.movie-list-container {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+.header {
+  background: linear-gradient(90deg, #070607, #030303); /* Gradient with a cinematic vibe */
+  color: #fff;
+  padding: 12px 20px; /* Added horizontal padding */
+  display: flex; /* Flexbox for layout */
+  align-items: center;
+  justify-content: space-between; /* Align items to the left and right */
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the emoji and text */
+}
+
+.logo-container .emoji {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+.header h1 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px; /* Increased spacing for drama */
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+  margin: 0; /* Remove default margin */
+  font-size: 2.5rem; /* Adjust size if needed */
+}
+
+.view-booked-seats-btn {
+  background: #3349aa; /* Cinematic red-orange button */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-booked-seats-btn:hover {
+  background: #193fe6;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Bouncing effect for the emoji 🎬 */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Movie Card */
+.movie-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.details-button {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 8px 12px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
+
+
+.view-booked-seats-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-booked-seats-btn:hover {
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  transform: scale(1.05);
+}
