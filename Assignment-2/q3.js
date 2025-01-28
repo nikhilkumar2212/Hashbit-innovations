@@ -28,5 +28,5 @@ function findTax(salary) {
 
     console.log(`The tax on a salary of ${salary} is ${tax}`);
 }
-let salary = parseInt(prompt("enter salary"));
+let salary = 1000000
 findTax(salary);
